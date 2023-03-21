@@ -4,7 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
-let controller = require("./controller/error.js");
+let controller = require("./controllers/error.js");
 app.set("view engine", "ejs");
 app.set("views", "views");
 

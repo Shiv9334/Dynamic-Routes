@@ -1,11 +1,8 @@
 let fs = require("fs");
 let path = require("path");
+const rootDir = require("../util/path");
 
-const p = path.join(
-  path.dirname(process.mainModule.filename),
-  "data",
-  "cart.json"
-);
+const p = path.join(__dirname, "data", "cart.json");
 
 module.exports = class Cart {
   static addProduct(id, productPrice) {
